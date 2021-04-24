@@ -52,6 +52,11 @@ class Exo7 {
         if (n==1) return T[0];
         else return T[n-1]+somme(T,n-1);
     }
+    public static boolean chercherVal(int [] T,int n,int val){
+        if (n==0) return false;
+        else if (T[n-1]==val) return true;
+            else return chercherVal(T,n-1,val);
+    }
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("give me n : ");
@@ -108,6 +113,17 @@ class Exo7 {
         System.out.println("somme de T1 = "+s1);
         System.out.println("somme de T2 = "+s2);
         System.out.println("somme de T3 = "+s3);
+
+
+        System.out.println("chercherVal : ");
+        System.out.print("give me val :");
+        int val = sc.nextInt();
+        boolean b1 = chercherVal(T1,n,val);
+        boolean b2 = chercherVal(T2,n,val);
+        boolean b3 = chercherVal(T3,n,val);
+        System.out.println("val exist in T1 = "+b1);
+        System.out.println("val exist in T2 = "+b2);
+        System.out.println("val exist in T3 = "+b3);
 
     }
     
