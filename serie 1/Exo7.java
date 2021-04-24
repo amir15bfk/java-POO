@@ -7,6 +7,7 @@ class Exo7 {
         }
         return T;
     }
+    
     public static int [] remplissage2(int [] T,int n){
         Scanner sc = new Scanner(System.in);
         for (int i = 0 ;i<n;i++){
@@ -26,37 +27,38 @@ class Exo7 {
         System.out.println("Somme des element de T = "+s);
         return T;
     }
+
     public static int recherchercheMin(int [] T,int n){  
         int min = T[0];
         for (int i = 0 ;i<n;i++){
             if (T[i]<min){
                 min = T[i];
             }
-            
         }
-        
         return min;
     }
+
     public static int recherchercheMax(int [] T,int n){  
         int max = T[0];
         for (int i = 0 ;i<n;i++){
             if (T[i]>max){
                 max = T[i];
             }
-            
         }
-        
         return max;
     }
+
     public static int somme(int [] T,int n){
         if (n==1) return T[0];
         else return T[n-1]+somme(T,n-1);
     }
+
     public static boolean chercherVal(int [] T,int n,int val){
         if (n==0) return false;
         else if (T[n-1]==val) return true;
             else return chercherVal(T,n-1,val);
     }
+
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("give me n : ");
