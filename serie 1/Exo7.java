@@ -48,6 +48,10 @@ class Exo7 {
         
         return max;
     }
+    public static int somme(int [] T,int n){
+        if (n==1) return T[0];
+        else return T[n-1]+somme(T,n-1);
+    }
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("give me n : ");
@@ -96,7 +100,14 @@ class Exo7 {
         System.out.println("max de T2 = "+max2);
         System.out.println("max de T3 = "+max3);
 
-        
+
+        System.out.println("somme : ");
+        int s1 = somme(T1,n);
+        int s2 = somme(T2,n);
+        int s3 = somme(T3,n);
+        System.out.println("somme de T1 = "+s1);
+        System.out.println("somme de T2 = "+s2);
+        System.out.println("somme de T3 = "+s3);
 
     }
     
