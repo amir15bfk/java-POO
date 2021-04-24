@@ -26,6 +26,28 @@ class Exo7 {
         System.out.println("Somme des element de T = "+s);
         return T;
     }
+    public static int recherchercheMin(int [] T,int n){  
+        int min = T[0];
+        for (int i = 0 ;i<n;i++){
+            if (T[i]<min){
+                min = T[i];
+            }
+            
+        }
+        
+        return min;
+    }
+    public static int recherchercheMax(int [] T,int n){  
+        int max = T[0];
+        for (int i = 0 ;i<n;i++){
+            if (T[i]>max){
+                max = T[i];
+            }
+            
+        }
+        
+        return max;
+    }
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("give me n : ");
@@ -55,6 +77,26 @@ class Exo7 {
         for (int i = 0 ;i<n;i++){
             System.out.println("T3["+i+"] : "+T3[i]);
         }
+
+
+        System.out.println("recherchercheMin : ");
+        int min1 = recherchercheMin(T1,n);
+        int min2 = recherchercheMin(T2,n);
+        int min3 = recherchercheMin(T3,n);
+        System.out.println("min de T1 = "+min1);
+        System.out.println("min de T2 = "+min2);
+        System.out.println("min de T3 = "+min3);
+
+
+        System.out.println("recherchercheMax : ");
+        int max1 = recherchercheMax(T1,n);
+        int max2 = recherchercheMax(T2,n);
+        int max3 = recherchercheMax(T3,n);
+        System.out.println("max de T1 = "+max1);
+        System.out.println("max de T2 = "+max2);
+        System.out.println("max de T3 = "+max3);
+
+        
 
     }
     
