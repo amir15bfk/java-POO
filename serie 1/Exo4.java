@@ -9,8 +9,13 @@ class Exo4 {
     }
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
-        System.out.print("give me n : ");
-        int n = sc.nextInt();
+        int n; 
+
+        do {
+            System.out.print("give me n : ");
+            n = sc.nextInt();    
+        }while (x<0);
+        sc.close();
         System.out.println(n+"! = "+fact(n));
         
     }
