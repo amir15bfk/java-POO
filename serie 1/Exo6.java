@@ -20,7 +20,7 @@ class Exo6{
         }
     }
     public static void afficherEQT(int a,int b,int c){
-        System.out.println(a+"*x*x+"+b+"*b+"+c+" = 0");
+        System.out.println(a+"*x*x+"+b+"*x+"+c+" = 0");
     }
     public static int delta(int a,int b,int c){
         return b*b-4*a*c;

@@ -8,6 +8,6 @@ class Exo3{
         int B = sc.nextInt();
         if (A<=B) {System.out.println("A ("+A+") est le plus petite");}
         else  {System.out.println("B ("+B+") est le plus petite");}
-        
+        //i can use min = A<B ? A:B; to find the min
     }
 }
